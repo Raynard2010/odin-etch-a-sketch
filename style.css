@@ -1,0 +1,18 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100%/16);
+}
+
+.gridbox{
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.gridbox:nth-child(17n + 1) {
+  width: 100%;
+  border: 0;
+  height: 0;
+}
